@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Exercicio6 {
+    public static void main(String[] Args){
+        int n1;
+        Scanner leia = new Scanner(System.in);
+        
+        System.out.print("Digite o primeiro valor ");
+        n1 = leia.nextInt();
+        
+        
+        if(n1 >=0 && n1<=9){
+            System.out.println("Valor válido");
+        }else{
+            System.out.println("Valor inválido");
+        }
+        
+        
+}
+}
