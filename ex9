@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class Exercicio9 {
+    public static void main(String[] Args){    
+        int a, b, c, mt, dv;
+        Scanner leia = new Scanner(System.in);
+      	
+        do{
+            System.out.print("Digite o valor A: ");
+            a = leia.nextInt();
+            System.out.print("Digite o valor B: ");
+            b = leia.nextInt(); 
+            System.out.print("Digite o valor C: ");
+            c = leia.nextInt();
+            
+            if(a ==0 && b==0 && c==0){
+                System.out.println("Valores zerados, digite novamente ");
+                System.out.println("");
+            }
+            
+            
+            if(a <b && a<c && b>c){
+                mt = a*b;
+                System.out.println("Menor " + a + " maior " + b+ " resultado da multiplicação: "  + mt);
+                System.out.println("");
+                
+                dv = b/a;
+                System.out.println("Resultado da divisão: "  + dv);
+                
+            }else if(a <b && a<c && c>b){
+                mt = a*c;
+                System.out.println("Menor " + a + " maior " + c+ " resultado da multiplicação: "  + mt);
+                System.out.println("");
+                
+                dv = c/a;
+                System.out.println("Resultado da divisão: "  + dv);
+                
+            }else if(b <a && b<c && a>c){
+                mt = b*a;
+               System.out.println("Menor " + b + " maior " + a+ " resultado da multiplicação: "  + mt);
+               System.out.println("");
+               
+               dv = a/b;
+                System.out.println("Resultado da divisão: "  + dv);
+                
+            }else if(b <a && b<c && c>a){
+                mt = b*c;
+               System.out.println("Menor " + b + " maior " + c+ " resultado da multiplicação: "  + mt);
+               System.out.println("");
+               
+               dv = c/b;
+                System.out.println("Resultado da divisão: "  + dv);
+                
+            }else if(c <b && c<a && a>b){
+                mt = c*a;
+                System.out.println("Menor " + c + " maior " + a+ " resultado da multiplicação: "  + mt);
+                System.out.println("");
+                
+                dv = a/c;
+                System.out.println("Resultado da divisão: "  + dv);
+                
+            }else if(c <b && c<a && b>a){
+                mt = c*b;
+                System.out.println("Menor " + c + " maior " + b+ " resultado da multiplicação: "  + mt);
+                System.out.println("");
+                
+                dv = b/c;
+                System.out.println("Resultado da divisão: "  + dv);
+                
+            } 
+            
+            
+            }while(a ==0 && b==0 && c==0);
+        
+            
+        
+        
+    }
+}
