@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Exercicio2 {
+    public static void main(String[] Args){
+        double x, md;
+        Scanner leia = new Scanner(System.in);
+        
+        System.out.print("Digite um valor ");
+        x = leia.nextDouble();
+        
+        
+        if(x <= 0){
+            md = x*(-1);        
+        }else{
+            md =x;
+        }
+        
+        System.out.print("O módulo de " +x+" é igual a " + md);
+        
+        
+}
+}
