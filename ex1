@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Exercicio1 {
+    public static void main(String[] Args){
+        int a, b, v;
+        Scanner leia = new Scanner(System.in);
+        System.out.print("Digite o valor de A: ");
+        a = leia.nextInt();
+        System.out.print("Digite o valor de B: ");
+        b = leia.nextInt();
+        
+        v = a;
+        a = b;
+        b = v;
+        
+        System.out.println("Os valores Trocados ficam assim: A = " + a + " e B = " + b);
+        
+        
+        
+        
+        
+                
+        
+        
+    }
+}
