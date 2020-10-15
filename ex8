@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Exercicio8 {
+    public static void main(String[] Args){    
+        int A, B, C;
+        Scanner leia = new Scanner(System.in);
+      	
+        System.out.print("Digite o lado A: ");
+        A = leia.nextInt();
+        System.out.print("Digite o lado B: ");
+        B = leia.nextInt(); 
+	System.out.print("Digite o lado C: ");
+        C = leia.nextInt();
+
+
+	if( A < B + C && B < A + C && C < A + B ){
+            if(A==B && B == C){
+		System.out.print("As medídas constam a de um triângulo equilátero");
+            }else if(A==B || A==C || B==C){
+		System.out.print("As medídas constam a de um triângulo isósceles");
+            }else{
+		System.out.print("As medídas constam a de um triângulo escaleno");
+			}
+	}else{
+            System.out.println("Os valores de A, B e C não constam como valores de um triangulo");
+		}
+
+    }
+}
