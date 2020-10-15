@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Exercicio10 {
+    public static void main(String[] Args){
+        int nm;
+        String op;
+        
+        
+        Scanner leia = new Scanner(System.in);
+        
+            System.out.print("Digite um número: ");
+            nm = leia.nextInt();
+            if(nm >=0 ){
+                System.out.println("O número " + nm + " é positivo");
+                System.out.println("Deseja continuar [S/N]");
+                op = leia.next();
+                
+            }else{
+                System.out.println("O número " + nm + " é negativo");
+                System.out.println("Deseja continuar [S/N]");
+                op = leia.next();
+                
+            }
+            
+            while(!op.equals("N") && !op.equals("n")){
+                System.out.print("Digite um número: ");
+                nm = leia.nextInt();
+                
+            if(nm >=0 ){
+                System.out.println("O número " + nm + " é positivo");
+                System.out.println("Deseja continuar [S/N]");
+                op = leia.next();
+                
+            }else{
+                System.out.println("O número " + nm + " é negativo");
+                System.out.println("Deseja continuar [S/N]");
+                op = leia.next();
+                
+            }
+}
+            
+}
+}
