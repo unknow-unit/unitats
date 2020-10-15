@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exercicio5 {
+    public static void main(String[] Args){
+        int n1, n2;
+        Scanner leia = new Scanner(System.in);
+        
+        System.out.print("Digite o primeiro valor ");
+        n1 = leia.nextInt();
+        System.out.print("Digite o primeiro valor ");
+        n2 = leia.nextInt();
+        
+        if(n1 == n2){
+            System.out.println("Os números são iguais");
+        }else if(n1 > n2){
+            System.out.println(n1 + " é maior que " + n2);
+        }else{
+            System.out.println(n2 + " é maior que " + n1);
+        }
+        
+        
+        
+        
+}
+}
